@@ -5,22 +5,21 @@ Code for Math for Programmers book by Paul Orland
 
 [x] C01 - Learning Math with code  
 [x] C02 - Drawing with 2D Vectors  
-[ ] C03 - Ascending to the 3D world    
-[ ] C04 -  
-[ ] C05 -  
-[ ] C06 -  
-[ ] C07 -   
-[ ] C08 -  
-[ ] C09 -  
-[ ] C10 -  
-[ ] C11 -  
-[ ] C12 -  
-[ ] C13 -  
-[ ] C14 -  
-[ ] C15 -  
-[ ] C16 -  
-[ ] C17 -   
-[ ] ...  
+[x] C03 - Ascending to the 3D world  
+[ ] C04 - Transforming vectors and graphics  
+[ ] C05 - Computing transformations with matrices  
+[ ] C06 - Generalizing to higher dimensions  
+[ ] C07 - Designing an arcade game    
+[ ] C08 - Understanding rates of change   
+[ ] C09 - Simulating moving objects   
+[ ] C10 - Working with symbolic expressions   
+[ ] C11 - Simulating force fields   
+[ ] C12 - Optimizing a physical system    
+[ ] C13 - Analyzing sound waves with a Fourier series   
+[ ] C14 - Fitting functions to data   
+[ ] C15 - Classifying data with logistic regression   
+[ ] C16 - Training neural networks    
+
 
 
 # Book  
