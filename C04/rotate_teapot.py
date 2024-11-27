@@ -23,6 +23,16 @@ def rotate_z_by(angle):
         return rotate_z(angle,v)
     return new_function
 
+def rotate_x(angle, vector):
+    x,y,z = vector
+    new_y, new_z = rotate2d(angle, (y,z))
+    return x, new_y, new_z
+
+def rotate_x_by(angle):
+    def new_function(v):
+        return rotate_x(angle,v)
+    return new_function
+
 ####################################################################
 #### this code takes a snapshot to reproduce the exact figure 
 #### shown in the book as an image saved in the "figs" directory
@@ -33,4 +43,4 @@ if '--snapshot' in sys.argv:
     camera.default_camera = camera.Camera('fig_4.11_rotate_teapot',[0])
 ####################################################################
 
-draw_model(polygon_map(rotate_z_by(pi/4.), load_triangles()))
+draw_model(polygon_map(rotate_x_by(pi/2.5), load_triangles()))

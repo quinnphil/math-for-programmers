@@ -24,3 +24,4 @@ if '--snapshot' in sys.argv:
 ####################################################################
 
 draw_model(polygon_map(translate_by((0,0,-20)), load_triangles()))
+# draw_model(polygon_map(translate_by((-1,0,0)), load_triangles()))
