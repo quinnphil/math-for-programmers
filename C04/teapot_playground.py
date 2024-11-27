@@ -1,6 +1,7 @@
 from vectors import scale, add
 from teapot import load_triangles
 from draw_model import draw_model
+from math import pi
 
 def compose(*args):
     def new_function(input):
@@ -42,22 +43,34 @@ def curry2(f):
 
 # draw_model(polygon_map(translate_by((0,0,-20)), load_triangles()))
 # draw_model(polygon_map(translate_by((-1,0,0)), load_triangles()))
-from math import pi
-angle = pi /2
 
-v = (2,2,2)
+# angle = pi /2
+#
+# v = (2,2,2)
+#
+# def stretch_x(scalar, vector):
+#     x,y,z = vector
+#     return (scalar*x, y, z)
+#
+# def stretch_x_by_scalar(scalar):
+#     def new_function(vector):
+#         return stretch_x(scalar, vector)
+#     return new_function
 
-def stretch_x(scalar, vector):
-    x,y,z = vector
-    return (scalar*x, y, z)
+# stretchx3 = curry2(stretch_x)
+#
+# print(stretchx3(3)(v))
+# draw_model(polygon_map(compose(stretchx3(3)), load_triangles()))
 
-def stretch_x_by_scalar(scalar):
-    def new_function(vector):
-        return stretch_x(scalar, vector)
-    return new_function
+Ae1 = (1, 1, 1)
+Ae2 = (1, 0, -1)
+Ae3 = (0, 1, 1)
 
-stretchx3 = curry2(stretch_x)
+def apply_A(v):
+    return add(
+        scale(v[0], Ae1),
+        scale(v[1], Ae2),
+        scale(v[2], Ae3)
+    )
 
-print(stretchx3(3)(v))
-draw_model(polygon_map(compose(stretchx3(3)), load_triangles()))
-
+draw_model(polygon_map(apply_A, load_triangles()))
