@@ -7,8 +7,8 @@ Code for Math for Programmers book by Paul Orland
 [x] C02 - Drawing with 2D Vectors  
 [x] C03 - Ascending to the 3D world  
 [x] C04 - Transforming vectors and graphics  
-[ ] C05 - Computing transformations with matrices  
-[ ] C06 - Generalizing to higher dimensions  
+[X] C05 - Computing transformations with matrices  
+[X] C06 - Generalizing to higher dimensions  
 [ ] C07 - Designing an arcade game    
 [ ] C08 - Understanding rates of change   
 [ ] C09 - Simulating moving objects   
